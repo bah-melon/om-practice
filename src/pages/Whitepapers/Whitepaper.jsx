@@ -1,10 +1,18 @@
 import React from 'react';
+<<<<<<< HEAD
+=======
 import Footer from '../../components/footer/Footer';
+>>>>>>> cb2e81f47b7fd561bee98e2108ad6df6f4cdd417
 import SectionHeader from '../../components/section-header/SectionHeader';
 import Navbar from '../../components/navbar/Navbar';
 import WhitepaperCard from '../../components/whitepaper/WhitepaperCard';
 import '../../design/whitepaper-design/Whitepaper-design.scss';
 import BannerImg from '../../assets/Banner.png';
+<<<<<<< HEAD
+import Footer from '../../components/footer/Footer';
+import Prefooter from '../../components/prefooter/Prefooter';
+=======
+>>>>>>> cb2e81f47b7fd561bee98e2108ad6df6f4cdd417
 
 export default function Whitepaper() {
     return (
@@ -39,6 +47,11 @@ export default function Whitepaper() {
                     />
                 </div>
             </div>
+<<<<<<< HEAD
+            <Prefooter></Prefooter>
+            <Footer></Footer>
+=======
+>>>>>>> cb2e81f47b7fd561bee98e2108ad6df6f4cdd417
         </div>
     );
 }
