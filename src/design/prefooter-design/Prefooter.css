@@ -6,7 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter {
     width: 90%;
     margin: 0 auto;
@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 100px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper {
     display: flex;
     flex-direction: column;
@@ -29,7 +29,16 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 1024px) {
+  .prefooter .prefooter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .left {
     width: 90%;
   }
@@ -42,7 +51,7 @@
   width: 630px;
   color: #07301F;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .left h1 {
     font-size: 3.1rem;
     width: 90%;
@@ -58,14 +67,14 @@
   margin: 50px 0;
   color: #07301F;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .left .text {
     font-size: 1.1rem;
     width: 90%;
     height: auto;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .left .buttons {
     display: flex;
     flex-direction: row;
@@ -84,7 +93,7 @@
   margin: 10px 5px;
   cursor: pointer;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .left .buttons .btn {
     font-size: 0.8rem;
     width: 80px;
@@ -92,16 +101,20 @@
     margin: 5px auto;
   }
 }
+.prefooter .prefooter-wrapper .Profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .prefooter .prefooter-wrapper .Profile img {
   border-radius: 50%;
   width: 475px;
   height: 475px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .Profile img {
     width: 80%;
     height: auto;
-    margin-left: 20px;
   }
 }
 .prefooter .prefooter-wrapper .profile-name {
@@ -110,7 +123,7 @@
   font-size: 20px;
   color: #07301F;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .profile-name {
     text-align: center;
   }
