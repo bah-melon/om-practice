@@ -1,0 +1,163 @@
+@import "../Global.scss";
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; 
+    background: none;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    padding-left: 20px;
+    img {
+        width: 135px;
+        height: 110px;
+    }
+}
+
+.navigation {
+    flex: 1; 
+    padding-right: 5%;
+    align-content: center;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    li a {
+        display: block;
+        text-decoration: none;
+        color: $lightGreen;
+        text-align: center;
+        padding: 16px;
+        font-weight: 500;
+        font-size: 14px;
+        width: 140px;
+    }
+
+    li a:hover {
+        background-color: $lightGreen;
+        color: $white;
+        border-radius: 16px;
+    }
+
+    li a:active {
+        background-color: $lightGreen;
+        border-radius: 16px;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: flex;
+    }
+
+    .dropdown-btn {
+        display: none;
+    }
+}
+
+.nav-menu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+
+    .dropdown-content {
+        display: none;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .dropdown-content.show {
+        display: flex;
+    }
+
+    .dropdown-btn {
+        display: none; 
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1280px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo {
+        width: 100%;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 80px;
+        }
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .nav-menu {
+        justify-content: center;
+
+        .dropdown-btn {
+            display: block; 
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+
+        }
+
+        .dropdown-content.show {
+            display: flex; 
+            flex-direction: column;
+            width: 100%;
+            border-radius: 16px;
+            padding: 50px;
+        }
+        ul{
+            padding: 0;
+            list-style-type: none;
+        }
+        li{
+            padding: 5px;
+        }
+        li a{
+            text-decoration: none;
+            color: $lightGreen;
+        }
+    }
+}
