@@ -6,6 +6,12 @@
     }
   }
 
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+} 
+}
+
   @mixin displayFlex($direction) {
     display: flex;
     flex-direction: $direction;
@@ -21,6 +27,11 @@
     .prefooter-wrapper{
         @include displayFlex(row);
         @include mobile {
+            @include displayFlex(column);
+            padding: 0;
+            width: 90%;
+          }
+          @include tablet {
             @include displayFlex(column);
             padding: 0;
             width: 90%;
@@ -84,6 +95,7 @@
             }
         }
         .Profile{
+            @include displayFlex(row);
             img {
                 border-radius: 50%;
                 width: 475px;
@@ -91,7 +103,7 @@
                 @include mobile{
                      width: 80%;
                      height: auto;
-                     margin-left: 20px;
+                     
                  }
             }
         }
