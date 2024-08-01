@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../../components/footer/Footer";
+import Prefooter from "../../components/prefooter/Prefooter";
 export default function Whitepaper(){
     return (
         <div>
-            <h1>Whitepaper</h1>
+            <Prefooter></Prefooter>
             <Footer></Footer>
         </div>
     )

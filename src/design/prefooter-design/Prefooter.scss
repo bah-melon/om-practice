@@ -1,0 +1,85 @@
+@import '../Global.scss';
+
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+
+  @mixin displayFlex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+  }
+  
+
+.prefooter{
+    @include mobile {
+        width: 90%;
+        margin: 0 auto;
+      }
+    .prefooter-wrapper{
+        @include displayFlex(row);
+        @include mobile {
+            @include displayFlex(column);
+            padding: 0;
+            width: 90%;
+          }
+        width: 1494px;
+        margin: 0 auto;
+        padding: 100px;
+        .left {
+            @include mobile{
+                width: 90%;
+            }
+            h1{
+                font-size: $textXXL;
+                font-weight: 300;
+                line-height: 75px;
+                letter-spacing: -0.6px;
+                width: 630px;
+                color: $darkGreen;
+                @include mobile{
+                   font-size: 3.1rem;
+                    width: 90%;
+                    line-height: 60px;
+                }
+            }
+            .text{
+                width: 456px;
+                height: 93px;
+                opacity: 0.9;
+                font-size: $textSmall;
+                line-height: 28px;
+                margin: 50px 0;
+                color: $darkGreen;
+                @include mobile{
+                    font-size: 1.1rem;
+                     width: 90%;
+                     height:auto;
+                 }
+            }
+        }
+        .Profile{
+            img {
+                border-radius: 50%;
+                width: 475px;
+                height: 475px;
+                @include mobile{
+                     width: 80%;
+                     height: auto;
+                     margin-left: 20px;
+                 }
+            }
+        }
+        .profile-name{
+            line-height: 40px;
+            font-weight: 400;
+            font-size: $textLarge;
+            color: $darkGreen;
+            @include mobile{
+                text-align: center;
+            }
+        }
+    }
+}

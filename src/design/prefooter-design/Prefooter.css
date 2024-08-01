@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 410px) {
+  .prefooter {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.prefooter .prefooter-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1494px;
+  margin: 0 auto;
+  padding: 100px;
+}
+@media screen and (max-width: 410px) {
+  .prefooter .prefooter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .prefooter .prefooter-wrapper .left {
+    width: 90%;
+  }
+}
+.prefooter .prefooter-wrapper .left h1 {
+  font-size: 66px;
+  font-weight: 300;
+  line-height: 75px;
+  letter-spacing: -0.6px;
+  width: 630px;
+  color: #07301F;
+}
+@media screen and (max-width: 410px) {
+  .prefooter .prefooter-wrapper .left h1 {
+    font-size: 3.1rem;
+    width: 90%;
+    line-height: 60px;
+  }
+}
+.prefooter .prefooter-wrapper .left .text {
+  width: 456px;
+  height: 93px;
+  opacity: 0.9;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 50px 0;
+  color: #07301F;
+}
+@media screen and (max-width: 410px) {
+  .prefooter .prefooter-wrapper .left .text {
+    font-size: 1.1rem;
+    width: 90%;
+    height: auto;
+  }
+}
+.prefooter .prefooter-wrapper .Profile img {
+  border-radius: 50%;
+  width: 475px;
+  height: 475px;
+}
+@media screen and (max-width: 410px) {
+  .prefooter .prefooter-wrapper .Profile img {
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
+  }
+}
+.prefooter .prefooter-wrapper .profile-name {
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #07301F;
+}
+@media screen and (max-width: 410px) {
+  .prefooter .prefooter-wrapper .profile-name {
+    text-align: center;
+  }
+}/*# sourceMappingURL=Prefooter.css.map */
