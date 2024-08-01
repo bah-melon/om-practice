@@ -8,7 +8,7 @@ export default function Footer () {
     return (
         <div className="footer">
             <FooterTop></FooterTop>
-            <img src={Image} alt="" class="Om-Logo"/>
+            <img src={Image} alt="" className="Om-Logo"/>
             <FooterBottom></FooterBottom>
         </div>
         

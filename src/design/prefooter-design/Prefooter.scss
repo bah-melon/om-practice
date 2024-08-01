@@ -59,6 +59,29 @@
                      height:auto;
                  }
             }
+            .buttons {
+                @include mobile{
+                    @include displayFlex(row);
+                    margin: 5px auto;
+                    }
+                .btn {
+                    font-size: 1.2rem;
+                    color: $white;
+                    background-color: $orange;
+                    width: 117px;
+                    height: 50px;
+                    border-radius: 16px;
+                    border: none;
+                    margin: 10px 5px ;
+                    cursor: pointer;
+                    @include mobile{
+                       font-size: 0.8rem;
+                       width: 80px;
+                       height: 35px;
+                       margin: 5px auto;
+                    }
+                }   
+            }
         }
         .Profile{
             img {
@@ -81,5 +104,6 @@
                 text-align: center;
             }
         }
+        
     }
 }
