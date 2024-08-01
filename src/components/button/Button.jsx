@@ -6,4 +6,3 @@ export default function Button({ title, className, handleClick }) {
       </button>
     );
   }
-  
