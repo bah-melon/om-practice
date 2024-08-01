@@ -3,7 +3,7 @@
 .navbar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center; 
     background: none;
     flex-wrap: wrap;
@@ -17,12 +17,11 @@
     }
 }
 
-.navigation {
-    flex: 1; 
+.navigation { 
     padding-right: 5%;
     align-content: center;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-start; 
     align-items: center; 
 
     ul {
@@ -74,7 +73,7 @@
 
 .nav-menu {
     align-items: center;
-    display: flex;
+    display: none;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -113,11 +112,11 @@
     .navbar {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .nav-logo {
-        width: 100%;
-        text-align: center;
+        padding-left: 0;
         img {
             width: 100px;
             height: 80px;
@@ -130,7 +129,7 @@
 
     .nav-menu {
         justify-content: center;
-
+        display: flex;
         .dropdown-btn {
             display: block; 
             cursor: pointer;
@@ -138,15 +137,16 @@
 
         .dropdown-content {
             display: none;
-
+            position: absolute;
+            top: 150px;
         }
 
         .dropdown-content.show {
             display: flex; 
             flex-direction: column;
-            width: 100%;
+            width: 80%;
             border-radius: 16px;
-            padding: 50px;
+            padding: 20px;
         }
         ul{
             padding: 0;

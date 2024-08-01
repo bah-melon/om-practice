@@ -1,14 +1,5 @@
 @import "../Global.scss";
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
 .mid-section {
     display: flex;
     flex-direction: column;
@@ -90,14 +81,14 @@
         .section-header{
             width: 90%;
             h1{
-                font-weight: 400;
-                font-size: $textXXL;
+                font-weight: 500;
+                font-size: $textExtraLarge;
                 color: $lightGreen;
                 margin-bottom: 20px;
             }
             p{
                 color: $lightGreen;
-                font-size: $textNormal;
+                font-size: $textSmall;
             }
         }
     }
