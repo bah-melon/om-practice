@@ -6,7 +6,7 @@ import Form from "../../components/form/Form";
 
 export default function Contact(){
     return (
-        <div>
+        <div className="container">
             <Navbar />
             <Form />
             <Prefooter/>

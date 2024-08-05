@@ -2,6 +2,7 @@ import React from "react";
 import '../../design/form-design/Form-design.scss'
 import Banner from "../../assets/Banner.png";
 import Button from "../button/Button";
+import InputField from "../inputfield/InputField";
 
 export default function Form() {
   return (
@@ -16,18 +17,12 @@ export default function Form() {
         </div>
         <div className="form">
              <form action="">
-                <label htmlFor="firstName">Voorname</label>
-                <input type="text" for="firstName" />
-                <label htmlFor="lastName">Achternaam</label>
-                <input type="text" for="lastName" />
-                <label htmlFor="email">Email*</label>
-                <input type="text" for="email" />
-                <label htmlFor="mobile">Mobiel telefoonnummer (niet verplicht)</label>
-                <input type="text" for="mobile" />
-                <label htmlFor="company">Naam onderneming (niet verplicht)</label>
-                <input type="text" for="company" />
-                <label htmlFor="letter">Hoe heeft u ons gevonden? (niet verplicht) </label>
-                <input type="text" for="letter" className="cover-letter"/>
+                <InputField title="Voorname" htmlFor="firstName" type="text" id="firstName"></InputField>
+                <InputField title="Achternaam" htmlFor="lastName" type="text" id="lastName"></InputField>
+                <InputField title="Email*" htmlFor="email" type="text" id="email"></InputField>
+                <InputField title="Mobiel telefoonnummer (niet verplicht)" htmlFor="mobile" type="text" id="mobile"></InputField>  
+                <InputField title="Naam onderneming (niet verplicht)" htmlFor="company" type="text" id="company"></InputField>
+                <InputField title="Hoe heeft u ons gevonden? (niet verplicht)" htmlFor="letter" type="text" id="cover-letter"></InputField>
                 <Button title="Sure let's go" className="btn" />
              </form>
         </div>
