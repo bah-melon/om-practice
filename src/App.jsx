@@ -1,22 +1,25 @@
-import './design/Global.scss'
-import {Route ,Routes} from 'react-router-dom'
-import Whitepaper from './pages/Whitepapers/Whitepaper'
-import Contact from './pages/Contact/Contact'
-import WorkAt from './pages/WorkAt/WorkAt'
-import OverOns from './pages/OverOns/OverOns'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WorkAt from '../src/pages/WorkAt/WorkAt';
+import Whitepaper from '../src/pages/Whitepapers/Whitepaper';
+import Contact from '../src/pages/Contact/Contact';
+import OverOns from '../src/pages/OverOns/OverOns';
 
 function App() {
+  const routes = [
+    { path: '/workat', element: <WorkAt /> },
+    { path: '/whitepaper', element: <Whitepaper /> },
+    { path: '/contact', element: <Contact /> },
+    { path: '/over-ons', element: <OverOns /> },
+  ];
 
   return (
-    <div>
-      <Routes>
-        <Route path = "/workat" element={<WorkAt/>}/>
-        <Route path = "/whitepaper" element={<Whitepaper/>}/>
-        <Route path = "/contact" element={<Contact/>}/>
-        <Route path = "/over-ons" element={<OverOns/>}/>
-      </Routes>
-    </div>
-  )
+    <Routes>
+      {routes.map((route, index) => (
+        <Route key={index} path={route.path} element={route.element} />
+      ))}
+    </Routes>
+  );
 }
 
-export default App
+export default App;
