@@ -31,6 +31,7 @@
             padding: 0;
             width: 90%;
           }
+        width: 100%;
           @include tablet {
             @include displayFlex(column);
             padding: 0;

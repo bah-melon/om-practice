@@ -17,7 +17,7 @@ export default function Navigation() {
                     <li><Link to="">DIENSTEN</Link></li>
                     <li><Link to="">AANPAK</Link></li>
                     <li><Link to="">OVER ONS</Link></li>
-                    <li><Link to="">WERKEN BIJ</Link></li>
+                    <li><Link to="/workat">WERKEN BIJ</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="">AAN DE SLAG</Link></li>
                     <li><Link to="/whitepaper">WHITEPAPERS</Link></li>
@@ -31,7 +31,7 @@ export default function Navigation() {
                         <li><Link to="">DIENSTEN</Link></li>
                         <li><Link to="">AANPAK</Link></li>
                         <li><Link to="">OVER ONS</Link></li>
-                        <li><Link to="">WERKEN BIJ</Link></li>
+                        <li><Link to="/workat">WERKEN BIJ</Link></li>
                         <li><Link to="/contact">CONTACT</Link></li>
                         <li><Link to="">AAN DE SLAG</Link></li>
                         <li><Link to="/whitepaper">WHITEPAPERS</Link></li>
