@@ -3,6 +3,7 @@ import {Route ,Routes} from 'react-router-dom'
 import Whitepaper from './pages/Whitepapers/Whitepaper'
 import Contact from './pages/Contact/Contact'
 import WorkAt from './pages/WorkAt/WorkAt'
+import OverOns from './pages/OverOns/OverOns'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Route path = "/workat" element={<WorkAt/>}/>
         <Route path = "/whitepaper" element={<Whitepaper/>}/>
         <Route path = "/contact" element={<Contact/>}/>
+        <Route path = "/over-ons" element={<OverOns/>}/>
       </Routes>
     </div>
   )

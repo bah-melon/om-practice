@@ -1,0 +1,33 @@
+@import '../Global.scss';
+
+.overOns-content{
+    .section-header{
+        margin: 25px auto;
+        width: 60%;
+        h1{
+            font-weight: 400;
+            font-size: $textXXL;
+            color: $black;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        p{
+            color: $black;
+            font-size: $textNormal;
+            width: 50%;
+            line-height: 1.8;
+        }
+    }
+    .image-widget{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        img{
+            border-radius: 16px;
+            margin: 10px;
+            width: 40%;
+        }
+    }
+}
