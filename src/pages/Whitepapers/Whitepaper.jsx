@@ -18,10 +18,11 @@ export default function Whitepaper() {
     return (
         <div className="container">
             <Navbar />
-            <div className="mid-section">
+            <div className="whitepaper-mid-section">
                 <SectionHeader 
                     title='Whitepaper' 
                     subtitle='Blijf op de hoogte van de nieuwste ontwikkelingen op het gebied van automatisering, data, softwareontwikkeling, AI, cloud services en alles wat met digitalisering te maken heeft.' 
+                    className='section-header'
                 />
                 <div className="cards-section">
                     <WhitepaperCard 
