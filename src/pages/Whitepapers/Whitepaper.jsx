@@ -8,6 +8,13 @@ import Footer from '../../components/footer/Footer';
 import Prefooter from '../../components/prefooter/Prefooter';
 
 export default function Whitepaper() {
+
+    const preFooter = {
+        heading : "Laten we afspreken en samen positieve impact maken!",
+        subheading : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum libero blandit, fermentum metus a, sodales elit. Vestibulum tincidunt blandit est id accumsan.",
+        title : "Spar erover met Andrea"
+    }
+
     return (
         <div className="container">
             <Navbar />
