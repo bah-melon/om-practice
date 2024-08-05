@@ -1,6 +1,6 @@
 @import "../Global.scss";
 
-.mid-section {
+.whitepaper-mid-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,96 +10,87 @@
     flex: 1;
     padding: 20px;
     .section-header{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto 20px;
+        padding: 0 20px;
         h1{
             font-weight: 400;
             font-size: $textHeading;
-            color: $lightGreen;
+            color: $Green;
             margin-bottom: 20px;
         }
         p{
-            color: $lightGreen;
+            color: $Green;
             font-size: $textNormal;
         }
     }
-}
 
-.section-header {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    padding: 0 20px;
-}
+    .cards-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        margin-top: 30px;
+        padding: 0 20px;
 
-.cards-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-    margin-top: 30px;
-    padding: 0 20px;
-}
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 252px;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 252px;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card-caption {
-    padding: 15px;
-    background-color: #fff;
-}
-
-.card-caption small {
-    font-size: $textExtraSmall;
-    color: $lightGreen;
-}
-
-.card-caption p {
-    font-size: $textLarge;
-    margin-top: 10px;
-    color: $lightGreen;
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card-caption small {
+            font-size: $textExtraSmall;
+            color: $Green;
+        }
+        
+        .card-caption p {
+            font-size: $textLarge;
+            margin-top: 10px;
+            color: $Green;
+        }
+        
+    }
 }
 
 @media (max-width: 1020px) {
-    .mid-section{
+    .whitepaper-mid-section{
         .section-header{
             width: 90%;
             h1{
                 font-weight: 500;
                 font-size: $textExtraLarge;
-                color: $lightGreen;
+                color: $Green;
                 margin-bottom: 20px;
             }
             p{
-                color: $lightGreen;
+                color: $Green;
                 font-size: $textSmall;
             }
         }
-    }
-
-    .cards-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-        max-width: none;
+        .cards-section {
+            flex-direction: column;
+            align-items: center;
+            .card {
+                width: 90%;
+                max-width: none;
+            }
+        }
     }
 }

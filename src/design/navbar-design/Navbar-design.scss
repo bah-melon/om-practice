@@ -3,7 +3,6 @@
 .navbar {
     display: flex;
     width: 100%;
-    // justify-content: space-between;
     align-items: center; 
     background: none;
     flex-wrap: wrap;
@@ -39,7 +38,7 @@
     li a {
         display: block;
         text-decoration: none;
-        color: $lightGreen;
+        color: $Green;
         text-align: center;
         padding: 16px;
         font-weight: 500;
@@ -48,13 +47,13 @@
     }
 
     li a:hover {
-        background-color: $lightGreen;
+        background-color: $Green;
         color: $white;
         border-radius: 16px;
     }
 
     li a:active {
-        background-color: $lightGreen;
+        background-color: $Green;
         border-radius: 16px;
     }
 
@@ -138,7 +137,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 150px;
+            top: 160px;
         }
 
         .dropdown-content.show {
@@ -157,7 +156,7 @@
         }
         li a{
             text-decoration: none;
-            color: $lightGreen;
+            color: $Green;
         }
     }
 }
