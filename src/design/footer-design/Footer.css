@@ -13,7 +13,12 @@
   margin: 50px auto 180px auto;
   position: relative;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
+  .footer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
   .footer {
     width: 90%;
   }
@@ -31,12 +36,17 @@
   padding: 50px;
   width: 90%;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerTop-container .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer .footerTop-container .wrapper {
+    padding: 20px;
   }
 }
 .footer .footerTop-container .wrapper p {
@@ -45,7 +55,7 @@
   font-size: 20px;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerTop-container .wrapper p {
     font-size: 18px;
   }
@@ -58,7 +68,7 @@
 .footer .footerTop-container .wrapper .social-media ul {
   padding: 0;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerTop-container .wrapper .social-media ul {
     margin: 20px 0px;
   }
@@ -86,15 +96,20 @@
   text-align: left;
   width: 360px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerTop-container .wrapper .service-container {
     width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer .footerTop-container .wrapper .service-container {
+    width: 260px;
   }
 }
 .footer .footerTop-container .wrapper .service-container .services {
   display: flex;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerTop-container .wrapper .service-container .services {
     display: flex;
     flex-direction: column;
@@ -120,7 +135,7 @@
   color: white;
   margin: 10px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerTop-container .wrapper .service-container .services ul a li {
     font-size: 16px;
   }
@@ -135,14 +150,22 @@
   transform: translateX(50%, -50%);
   transform: translateY(50%, -50%);
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .Om-Logo {
     position: absolute;
-    left: 90px;
-    top: 630px;
+    left: 100px;
+    top: 670px;
     z-index: 2;
     width: 80px;
     height: 70px;
+    transform: translateX(50%, -50%);
+    transform: translateY(50%, -50%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer .Om-Logo {
+    transform: translateX(50%, -50%);
+    transform: translateY(50%, -50%);
   }
 }
 .footer .footerBottom-container {
@@ -150,15 +173,28 @@
   border-radius: 0px 0px 20px 20px;
   padding: 100px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerBottom-container {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer .footerBottom-container {
+    padding: 40px;
   }
 }
 .footer .footerBottom-container .wrapper {
   width: 1100px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
+  .footer .footerBottom-container .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
   .footer .footerBottom-container .wrapper {
     display: flex;
     flex-direction: column;
@@ -172,12 +208,21 @@
   justify-content: space-between;
   width: 831px;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerBottom-container .wrapper .locations-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer .footerBottom-container .wrapper .locations-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
   }
 }
 .footer .footerBottom-container .wrapper .locations-info p {
@@ -213,13 +258,13 @@
   width: 230px;
   cursor: pointer;
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerBottom-container .wrapper .copyright-info p {
     width: 200px;
     margin: 10px auto;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 800px) {
   .footer .footerBottom-container .wrapper .copyright-info {
     display: flex;
     flex-direction: column;
