@@ -6,6 +6,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .prefooter {
     width: 90%;
@@ -16,7 +25,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1494px;
+  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 100px;
 }
@@ -27,6 +37,7 @@
     justify-content: space-between;
     padding: 0;
     width: 90%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -80,6 +91,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 5px auto;
+    width: 60%;
   }
 }
 .prefooter .prefooter-wrapper .left .buttons .btn {
@@ -110,11 +122,13 @@
   border-radius: 50%;
   width: 475px;
   height: 475px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
   .prefooter .prefooter-wrapper .Profile img {
     width: 80%;
     height: auto;
+    margin: 0 auto;
   }
 }
 .prefooter .prefooter-wrapper .profile-name {

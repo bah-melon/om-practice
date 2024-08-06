@@ -6,9 +6,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
 .footer {
   border-radius: 20px;
-  width: 1400px;
+  width: 95%;
   height: 815px;
   margin: 50px auto 180px auto;
   position: relative;
@@ -184,7 +193,7 @@
   }
 }
 .footer .footerBottom-container .wrapper {
-  width: 1100px;
+  width: 90%;
 }
 @media screen and (max-width: 800px) {
   .footer .footerBottom-container .wrapper {

@@ -19,7 +19,7 @@ export default function Navigation() {
                     <li><Link to="">OVER ONS</Link></li>
                     <li><Link to="/workat">WERKEN BIJ</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
-                    <li><Link to="">AAN DE SLAG</Link></li>
+                    <li><Link to="/aan-de-slag">AAN DE SLAG</Link></li>
                     <li><Link to="/whitepaper">WHITEPAPERS</Link></li>
                 </ul>
             </div>
