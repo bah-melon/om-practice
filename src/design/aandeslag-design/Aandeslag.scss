@@ -107,7 +107,10 @@ form {
        }
        input:focus {
         border: 2px solid $black;
-    }
+       }
+       p {
+        color: red;
+       }
     }
 
     .company{
@@ -125,6 +128,9 @@ form {
         input:focus {
             border: 2px solid $black;
         }
+        p {
+            color: red;
+           }
     }
 
     #message {
