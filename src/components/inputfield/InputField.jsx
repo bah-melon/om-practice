@@ -6,8 +6,8 @@ export default function InputField({ id, type, htmlFor, title, className }) {
   const inputRef = useRef(null);
 
   const handleClick = () => {
-    if (value === "") {
-      setError("Please complete this required field.");
+    if (id === "*" && value === "") {
+      setError("Please complete the text field!");
     } else {
       setError("");
     }
@@ -30,7 +30,7 @@ export default function InputField({ id, type, htmlFor, title, className }) {
   return (
     <div className={className} ref={inputRef}>
       <label htmlFor={htmlFor}>{title}</label>
-      <input type={type} id={id} placeholder={title} value={value} onChange={(e) => setValue(e.target.value)} onClick={handleClick}/>
+      <input type={type}  id={id}  placeholder={title} value={value} onChange={(e) => setValue(e.target.value)} onClick={handleClick} />
       {error && <p className="paragraph">{error}</p>}
     </div>
   );
