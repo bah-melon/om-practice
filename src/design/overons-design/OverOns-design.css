@@ -13,4 +13,33 @@
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-}/*# sourceMappingURL=Global.css.map */
+}
+
+.overOns-content .section-header {
+  margin: 25px auto;
+  width: 60%;
+}
+.overOns-content .section-header h1 {
+  font-weight: 400;
+  font-size: 66px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.overOns-content .section-header p {
+  color: black;
+  font-size: 18px;
+  width: 50%;
+  line-height: 1.8;
+}
+.overOns-content .image-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.overOns-content .image-widget img {
+  border-radius: 16px;
+  margin: 10px;
+  width: 40%;
+}/*# sourceMappingURL=OverOns-design.css.map */

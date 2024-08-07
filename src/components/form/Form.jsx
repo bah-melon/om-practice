@@ -22,7 +22,9 @@ export default function Form() {
                 <InputField title="Email*" htmlFor="email" type="text" id="email"></InputField>
                 <InputField title="Mobiel telefoonnummer (niet verplicht)" htmlFor="mobile" type="text" id="mobile"></InputField>  
                 <InputField title="Naam onderneming (niet verplicht)" htmlFor="company" type="text" id="company"></InputField>
-                <InputField title="Hoe heeft u ons gevonden? (niet verplicht)" htmlFor="letter" type="text" id="cover-letter"></InputField>
+                <div class="contact-form-help-text">
+                  <textarea class="wideInput" placeholder="type text here" id="cover-letter"></textarea>
+               </div>
                 <Button title="Sure let's go" className="btn" />
              </form>
         </div>

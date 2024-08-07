@@ -30,6 +30,7 @@
             @include displayFlex(column);
             padding: 0;
             width: 90%;
+            text-align: center;
           }
         width: 100%;
           @include tablet {
@@ -37,7 +38,7 @@
             padding: 0;
             width: 90%;
           }
-        width: 1494px;
+        width: 95%;
         margin: 0 auto;
         padding: 100px;
         .left {
@@ -75,6 +76,7 @@
                 @include mobile{
                     @include displayFlex(row);
                     margin: 5px auto;
+                    width: 60%;
                     }
                 .btn {
                     font-size: 1.2rem;
@@ -101,9 +103,11 @@
                 border-radius: 50%;
                 width: 475px;
                 height: 475px;
+                margin: 0 auto;
                 @include mobile{
                      width: 80%;
                      height: auto;
+                     margin: 0 auto;
                      
                  }
             }

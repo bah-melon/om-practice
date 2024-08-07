@@ -1,0 +1,160 @@
+@import '../Global.scss';
+
+@mixin displayFlex($flex-direction , $alignment){
+    display: flex;
+    justify-content: space-between;
+    align-items: $alignment;
+    flex-direction: $flex-direction;
+}
+
+.text-container{
+    @include displayFlex(row,center );
+    width: 70%;
+    .text-wrapper{
+        @include displayFlex(column,center );
+        width: 45%;
+        padding: 2.5rem 0;
+        h1 {
+            font-size: 66px;
+            font-weight: 400;
+            letter-spacing: -.6px;
+            line-height: 70px;
+            @media screen and (max-width : 1000px) {
+                font-size: 50px;
+          }
+        }
+        p {
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+        @media screen and (max-width : 1000px) {
+            width: 90%;
+      }
+    }
+    img {
+        width: 45%;
+        @media screen and (max-width : 1000px) {
+              display: none;
+        }
+    }
+}
+
+
+.card-container{
+    width: 70%;
+    .card-wrapper{
+        @include displayFlex(row,flex-start );
+        background-color: $white;
+        margin: 10px auto;
+        padding: 10px;
+        .text{
+            width: 50%;
+            margin: 15px auto;
+            @media screen and (max-width : 1000px) {
+                 width:90%;
+          }
+            h1{
+                font-size: 1.4rem;
+                width: 90%;
+                margin: 0 auto;
+            }
+            h2 {
+                font-size: 1.1rem;
+                margin: 10px auto;
+            }
+            p {
+                margin: 10px auto;
+            }
+        }
+        @media screen and (max-width : 1000px) {
+            @include displayFlex(column,center );
+             width:100%;
+      }
+    }
+}
+
+
+.form-field-container {  
+    width: 70%; 
+    background-color: $white;
+    padding: 20px;
+.heading{
+    padding: 40px 0;
+}
+    
+form {
+    .info {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 20px 0;
+        @media screen and (max-width:1000px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    .input-field{
+        display: block;
+        width: 100%;
+       input {
+        width: 100%;
+        padding: 15px;
+        background-color: #FFF6F2;
+        border: 0;
+        outline: 0;
+        color: $black;
+       }
+       input:focus {
+        border: 2px solid $orange;
+       }
+       p {
+        color: red;
+       }
+    }
+
+    .company{
+        width: 100%;
+        padding: 20px 0;
+        input{
+            display: block;
+             width: 100%;
+             background-color: #FFF6F2;
+             border: 0;
+             outline: 0;
+             padding: 15px;
+             color: $black;
+        }
+        input:focus {
+            border: 2px solid $orange;
+        }
+        p {
+            color: red;
+           }
+    }
+
+    #message {
+        width: 100%;
+        padding: 20px;
+        background-color: #FFF6F2;
+        border: 0;
+        outline: 0;
+    }
+    #message:focus {
+        border: 2px solid $orange;
+    }
+   
+    .btn {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 0;
+        border: none;
+        border-radius: 10px;
+        background-color: $orange;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+}
