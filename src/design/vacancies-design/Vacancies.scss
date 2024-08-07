@@ -1,0 +1,173 @@
+@import '../Global.scss';
+
+@mixin displayFlex($direction , $align)
+{
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: space-between;
+}
+
+
+.position-container{
+    @include displayFlex(column,center );
+    width: 70%;
+    padding: 20px;
+    .locations {
+        @include displayFlex(row, center);
+        padding: 20px 0;
+        p{
+            margin: 0 20px;
+            color: $orange;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+    .job {
+        padding: 20px;
+        
+        p {
+            color: #07301f;
+            font-size: 2.9rem;
+            letter-spacing: -.6px;
+            line-height: 75px;
+            font-weight:400;
+        }
+    }
+    .description {
+        width: 60%;
+        margin: 0 auto;
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+            letter-spacing: -.6px;
+            color: #07301f;
+        }
+    }
+    .text {
+        padding-top: 4.7rem;
+        width: 95%;
+        font-weight: 500;
+        #question {
+            line-height: 50px;
+        }
+    }
+}
+
+.skills-container {
+    width: 70%;
+    padding: 0 40px;
+    .job-title{
+        width: 100%
+    }
+}
+
+.requirements {
+    padding: 2.4rem 0;
+    .requirement{
+        @include displayFlex(row,center );
+        justify-content: flex-start;
+        img {
+            width: 20px;
+            display: inline;
+        }
+    }
+}
+
+.form-container {
+    width: 70%;
+    padding: 0 40px;
+    margin: 0 auto; 
+    
+    form {
+      .info {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+      }
+  
+      input {
+        padding: 15px 0;
+        width: 100%;
+        border: none;
+        box-sizing: border-box; 
+  
+        &:focus {
+          outline: none; 
+          border: 2px solid $orange; 
+        }
+      }
+  
+      label {
+        display: block;
+        margin: 10px auto;
+      }
+
+      p {
+        color: red;
+      }
+  
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-radius: 10px;
+        background-color: $orange;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 20px 0;
+      }
+
+      #message {
+        width: 100%;
+        height: 150px;
+        border: none;
+        &:focus {
+            outline: none; 
+            border: 2px solid $orange; 
+          }
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .form-container {
+      width: 80%;
+      padding: 0 20px;
+    }
+  
+    form .info {
+      grid-template-columns: 1fr;
+    }
+  
+    form .btn {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      width: 90%;
+      padding: 0 10px;
+    }
+  
+    form .btn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      width: 95%;
+      padding: 0 5px;
+    }
+  
+    form .btn {
+      font-size: 0.9rem;
+    }
+  }
+  

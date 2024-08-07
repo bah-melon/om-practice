@@ -5,6 +5,7 @@ import Contact from './pages/Contact/Contact'
 import WorkAt from './pages/WorkAt/WorkAt'
 import OverOns from './pages/OverOns/OverOns'
 import AanDeSlag from './pages/AanDeSlag/AanDeSlag'
+import Vacancies from './pages/Vacancies/Vacancies'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path = "/contact" element={<Contact/>}/>
         <Route path = "/over-ons" element={<OverOns/>}/>
         <Route path="/aan-de-slag" element={<AanDeSlag/>}/>
+        <Route path="/vacancies" element={<Vacancies/>}/>
       </Routes>
     </div>
   )
