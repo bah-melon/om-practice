@@ -16,7 +16,7 @@ export default function Navigation() {
                     <li><Link to="">CASES</Link></li>
                     <li><Link to="">DIENSTEN</Link></li>
                     <li><Link to="">AANPAK</Link></li>
-                    <li><Link to="">OVER ONS</Link></li>
+                    <li><Link to="/over-ons">OVER ONS</Link></li>
                     <li><Link to="/workat">WERKEN BIJ</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="/aan-de-slag">AAN DE SLAG</Link></li>
@@ -30,7 +30,7 @@ export default function Navigation() {
                         <li><Link to="">CASES</Link></li>
                         <li><Link to="">DIENSTEN</Link></li>
                         <li><Link to="">AANPAK</Link></li>
-                        <li><Link to="">OVER ONS</Link></li>
+                        <li><Link to="/over-ons">OVER ONS</Link></li>
                         <li><Link to="/workat">WERKEN BIJ</Link></li>
                         <li><Link to="/contact">CONTACT</Link></li>
                         <li><Link to="/aan-de-slag">AAN DE SLAG</Link></li>
