@@ -1,9 +1,11 @@
+import './design/Global.scss'
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import WorkAt from '../src/pages/WorkAt/WorkAt';
 import Whitepaper from '../src/pages/Whitepapers/Whitepaper';
 import Contact from '../src/pages/Contact/Contact';
 import OverOns from '../src/pages/OverOns/OverOns';
+import AanDeSlag from './pages/AanDeSlag/AanDeSlag'
 
 function App() {
   const routes = [
@@ -11,6 +13,7 @@ function App() {
     { path: '/whitepaper', element: <Whitepaper /> },
     { path: '/contact', element: <Contact /> },
     { path: '/over-ons', element: <OverOns /> },
+    { path: '/aan-de-slag', element: <AanDeSlag /> },
   ];
 
   return (

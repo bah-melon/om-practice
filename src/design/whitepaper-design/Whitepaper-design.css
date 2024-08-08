@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.whitepaper-mid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+  flex: 1;
+  padding: 20px;
+}
+.whitepaper-mid-section .section-header {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+}
+.whitepaper-mid-section .section-header h1 {
+  font-weight: 400;
+  font-size: 88px;
+  color: #153F2D;
+  margin-bottom: 20px;
+}
+.whitepaper-mid-section .section-header p {
+  color: #153F2D;
+  font-size: 18px;
+}
+.whitepaper-mid-section .cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.whitepaper-mid-section .cards-section .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 252px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.whitepaper-mid-section .cards-section .card:hover {
+  transform: translateY(-5px);
+}
+.whitepaper-mid-section .cards-section .card img {
+  width: 100%;
+  height: auto;
+}
+.whitepaper-mid-section .cards-section .card-caption small {
+  font-size: 14px;
+  color: #153F2D;
+}
+.whitepaper-mid-section .cards-section .card-caption p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #153F2D;
+}
+
+@media (max-width: 1020px) {
+  .whitepaper-mid-section .section-header {
+    width: 90%;
+  }
+  .whitepaper-mid-section .section-header h1 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #153F2D;
+    margin-bottom: 20px;
+  }
+  .whitepaper-mid-section .section-header p {
+    color: #153F2D;
+    font-size: 16px;
+  }
+  .whitepaper-mid-section .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whitepaper-mid-section .cards-section .card {
+    width: 90%;
+    max-width: none;
+  }
+}/*# sourceMappingURL=Whitepaper-design.css.map */

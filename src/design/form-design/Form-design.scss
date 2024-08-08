@@ -78,7 +78,8 @@
 
     .form {
       @include displayFlex(column);
-      width: 600px;
+      width: 45%;
+      margin: 0 10px;
 
       @media (max-width: 768px) {
         width: 100%;
@@ -87,13 +88,13 @@
 
       input {
         display: block;
-        width: 350px;
+        width: 100%;
         height: 50px;
         margin: 10px auto;
         border: none;
 
         @media (max-width: 768px) {
-          width: 80%;
+          width: 100%;
         }
 
         @media (max-width: 480px) {
@@ -107,9 +108,12 @@
 
       #cover-letter {
         height: 250px;
+        width: 350px;
+        border: none;
 
         @media (max-width: 480px) {
           height: 200px;
+          width: 100%
         }
       }
 
