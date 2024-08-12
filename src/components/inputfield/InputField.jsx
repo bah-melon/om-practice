@@ -1,37 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 
-export default function InputField({ id, type, htmlFor, title, className }) {
-  const [value, setValue] = useState("");
-  const [error, setError] = useState("");
-  const inputRef = useRef(null);
-
-  const handleClick = () => {
-    if (id === "*" && value === "") {
-      setError("Please complete the text field!");
-    } else {
-      setError("");
-    }
-  };
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (inputRef.current && !inputRef.current.contains(event.target)) {
-        setError("");
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
+export default function InputField({ id, type, htmlFor, title, className ,onChange}) {
   return (
-    <div className={className} ref={inputRef}>
+    <div className={className} >
       <label htmlFor={htmlFor}>{title}</label>
-      <input type={type}  id={id}  placeholder={title} value={value} onChange={(e) => setValue(e.target.value)} onClick={handleClick} />
-      {error && <p className="paragraph">{error}</p>}
+      <input type={type}  id={id}  placeholder={title} onChange={onChange}/>
+       <p className="paragraph"></p>
     </div>
   );
 }

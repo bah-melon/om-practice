@@ -8,6 +8,7 @@ export default function Navbar(){
         <div className='navbar'>
             <NavbarLogo/>
             <Navigation/>
+            
         </div>
     )
 }

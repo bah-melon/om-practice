@@ -122,6 +122,17 @@
         }
         
     }
+
+    .loader {
+        width: 50px;
+        margin: 0 auto;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid;
+        border-color: #000 #0000;
+        animation: l1 1s infinite;
+        visibility: hidden;
+      }
 }
 
 @media(max-width: 1024px){
