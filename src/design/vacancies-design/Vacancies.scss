@@ -17,10 +17,10 @@
         @include displayFlex(row, center);
         padding: 20px 0;
         p{
-            margin: 0 20px;
+            margin: 0;
             color: $orange;
             cursor: pointer;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: 400;
         }
     }
@@ -75,6 +75,18 @@
     }
 }
 
+.border {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0;
+  span {
+    border: 1px solid $orange;
+    width: inherit;
+    
+  }
+}
+
 .form-container {
     width: 70%;
     padding: 0 40px;
@@ -89,7 +101,7 @@
   
       input {
         padding: 15px 0;
-        width: 100%;
+        width: 100% ;
         border: none;
         box-sizing: border-box; 
   
@@ -106,6 +118,7 @@
 
       p {
         color: red;
+        font-size: 0.9rem;
       }
   
       .btn {
