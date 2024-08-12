@@ -20,10 +20,18 @@ export default function FormApplication() {
     });
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
+        const { name, type, value, files } = e.target;
+        if (type === 'file') {
+            setFormData({
+                ...formData,
+                [name]: files[0] // Handle file input
+            });
+        } else {
+            setFormData({
+                ...formData,
+                [name]: value
+            });
+        }
     };
 
     console.log(formData);
