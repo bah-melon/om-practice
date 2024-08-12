@@ -4,10 +4,17 @@ import DropdownImg from '../../assets/Dropdown.png';
 
 export default function Navigation() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token'));
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
+
+    const handleSignOut = () => {
+        localStorage.removeItem('token');
+        setIsLoggedIn('');
+        window.location.reload();
+    }
 
     return (
         <div className="nav-wrapper">
@@ -21,6 +28,11 @@ export default function Navigation() {
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="/aan-de-slag">AAN DE SLAG</Link></li>
                     <li><Link to="/whitepaper">WHITEPAPERS</Link></li>
+                    <li>{isLoggedIn ? 
+                            (<Link onClick={handleSignOut}>SIGN OUT</Link>) : 
+                            (<Link to="/signin">SIGN IN</Link>)
+                        }
+                    </li>
                 </ul>
             </div>
             <div className="nav-menu">
@@ -35,6 +47,11 @@ export default function Navigation() {
                         <li><Link to="/contact">CONTACT</Link></li>
                         <li><Link to="/aan-de-slag">AAN DE SLAG</Link></li>
                         <li><Link to="/whitepaper">WHITEPAPERS</Link></li>
+                        <li>{isLoggedIn ? 
+                                (<Link onClick={handleSignOut}>SIGN OUT</Link>) : 
+                                (<Link to="/signin">SIGN IN</Link>)
+                            }
+                        </li>
                     </ul>
                 </div>
             </div>
