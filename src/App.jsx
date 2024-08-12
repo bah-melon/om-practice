@@ -6,6 +6,9 @@ import Whitepaper from '../src/pages/Whitepapers/Whitepaper';
 import Contact from '../src/pages/Contact/Contact';
 import OverOns from '../src/pages/OverOns/OverOns';
 import AanDeSlag from './pages/AanDeSlag/AanDeSlag'
+import SignIn from './pages/Sign/SignIn';
+import Signup from './pages/Sign/Signup';
+import Profile from './pages/Profile/Profile';
 
 function App() {
   const routes = [
@@ -14,6 +17,9 @@ function App() {
     { path: '/contact', element: <Contact /> },
     { path: '/over-ons', element: <OverOns /> },
     { path: '/aan-de-slag', element: <AanDeSlag /> },
+    { path: '/signin', element: <SignIn/>},
+    { path: '/signup', element: <Signup/>},
+    { path: '/profile', element: <Profile/>}
   ];
 
   return (
