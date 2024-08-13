@@ -1,0 +1,110 @@
+@import '../Global.scss';
+
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+}
+
+.application-container{
+    background-color: $white;
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    h1{
+        color: #FF6600;
+        font-size: 2.5rem;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        @include mobile{
+            font-size: 1.5rem;
+            width: 100%;
+        }
+    }
+    .info {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 90%;
+        margin: 30px auto;
+        @include mobile{
+            grid-template-columns: auto;
+        }
+        p {
+            color: $Green;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            padding: 15px;
+            border: 3px solid $orange;
+            border-radius: 20px;
+            width: 90%;
+            cursor: pointer;
+            @include mobile{
+                font-size: 0.9rem;
+            }
+            span {
+                margin: 8px 0;
+                font-size: 1.1rem;
+                @include mobile{
+                    font-size: 0.9rem;
+                }
+            }
+            transition: 0.9s all ease;
+        }
+        p:hover {
+            background-color: $orange;
+            color: white;
+            transition: 0.9s all ease;
+            border: white;
+        }
+    }
+    .cv {
+        width: 30%;
+        margin: 0 auto;
+        display:  flex;
+        align-items: center;
+        justify-content: space-around;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        strong {
+            font-size: 1.3rem;
+            color: $Green;
+            @include mobile{
+                font-size: 0.9rem;
+                text-align: center;
+            }
+        }
+        a {
+            text-decoration: none;
+            background-color: $white;
+            color: $Green;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 30px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.9s all ease;
+            @include mobile{
+                font-size: 0.9rem;
+                width: 60%;;
+                text-align: center;
+                background-color: $orange;
+                color: $white;
+            }
+        }
+        a:hover {
+            background-color: $orange;
+            color: white;
+            transition: 0.9s all ease;
+        }
+    }
+}

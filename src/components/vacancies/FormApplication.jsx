@@ -3,6 +3,7 @@ import Button from "../button/Button";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import OpenPositions from "../workAt/OpenPositions";
+import axiosClient from "../../api/axiosClient";
 
 export default function FormApplication() {
     const { id } = useParams(); 
@@ -14,7 +15,7 @@ export default function FormApplication() {
         email: '',
         city: '',
         country: '',
-        file: null,
+        file_path: '../../',
         description: '',
         open_positions : id
     });
@@ -24,7 +25,7 @@ export default function FormApplication() {
         if (type === 'file') {
             setFormData({
                 ...formData,
-                [name]: files[0] // Handle file input
+                [name]: files[0]
             });
         } else {
             setFormData({
@@ -40,13 +41,13 @@ export default function FormApplication() {
         e.preventDefault();
         
         try {
-            const token = localStorage.getItem('token');
-            if (!token) {
-                throw new Error("No token found, please log in again.");
-            }
+            // const token = localStorage.getItem('token');
+            // if (!token) {
+            //     throw new Error("No token found, please log in again.");
+            // }
             
             const dataToSubmit = { ...formData, id };
-            const res = await axios.post('https://dbb1-188-44-30-163.ngrok-free.app/api/applications/create', dataToSubmit, {
+            const res = await axiosClient.post('/applications/create', dataToSubmit, {
     
             });
 
@@ -82,7 +83,7 @@ export default function FormApplication() {
                 <input title="Stad" type="text" id="stad" className="stad" name="city" value={formData.city} onChange={handleChange}></input>
                 <label htmlFor="country">Land</label>
                 <input title="Land" type="text" id="land" className="land" name="country" value={formData.country} onChange={handleChange}></input>
-                <input type="file" id="cvFile" name="file_path" onChange={handleChange}></input>
+                <input type="file" id="cvFile" onChange={handleChange}></input>
                 <label htmlFor="message">Bericht</label>
                 <textarea className="wideInput" placeholder="type text here" id="message" value={formData.description} onChange={handleChange} name="description"></textarea>
                 <Button title="Verzenden" className="btn" />

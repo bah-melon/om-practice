@@ -1,38 +1,18 @@
 import React, { useEffect, useState } from "react";
 import SectionHeader from "../section-header/SectionHeader";
 import OpenPosition from "./OpenPositions/OpenPosition";
-import axios from "axios";
+import axiosClient from "../../api/axiosClient";
 
 export default function OpenPositions() {
     const [positions, setPositions] = useState([]);
 
     useEffect(() => {
-        const loginAndFetchUser = async () => {
-            try {
-                const res = await axios.post('https://dbb1-188-44-30-163.ngrok-free.app/api/auth/login', 
-                    {
-                        email: 'test@test.com',
-                        password: 'Tester123'
-                    }
-                );
-                const token = res.data.token;        
-                localStorage.setItem('token', token);
-                fetchPositions(token);
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        };
-    
-        loginAndFetchUser();
+        fetchPositions();
     }, []); 
 
-    const fetchPositions = async (token) => {
+    const fetchPositions = async () => {
         try {
-            const res = await axios.get("https://dbb1-188-44-30-163.ngrok-free.app/api/open-positions", {
-                headers: {
-                    'Authorization': `Bearer ${token}`,
-                    'ngrok-skip-browser-warning': 'true' 
-                }
+            const res = await axiosClient.get("/open-positions", {
             });
             
             const data = res.data; 
