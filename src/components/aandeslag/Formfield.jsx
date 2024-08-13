@@ -16,7 +16,7 @@ export default function Formfield(){
                 </div>
                 <InputField title="Bedrijfsnaam" htmlFor="company" type="text" id="company" className="company"></InputField> 
                 <label htmlFor="message">Bericht</label> 
-                <textarea class="wideInput" placeholder="type text here" id="message"></textarea>
+                <textarea className="wideInput" placeholder="type text here" id="message"></textarea>
                 <Button title="Verzenden" className="btn" />
                 </form>
         </div>
