@@ -16,7 +16,7 @@ export default function Applicant() {
 
   const fetchApplicant = async () => {
     try {
-      const res = await axiosClient.get(`/applications/show/10`);
+      const res = await axiosClient.get(`/applications/show/3`);
       const data = res.data;
 
       if (data && data.application) {
@@ -42,12 +42,14 @@ export default function Applicant() {
         country={applicants.country}
         email={applicants.email}
         phoneNumber={applicants.phoneNumber}
+        description={applicants.description}
         city={applicants.city}
         cvLink={applicants.file_path}
         containerClassName={"application-container"}
         titleClassName={"description"}
         infoClassName={"info"}
         cvClassName={"cv"}
+        letter={"letter"}
       />
     </div>
   );

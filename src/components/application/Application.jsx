@@ -7,11 +7,13 @@ export default function Application({
   city,
   email,
   phoneNumber,
+  description,
   cvLink,
   titleClassName,
   infoClassName,
   cvClassName,
   containerClassName,
+  letter,
 }) {
 
   return (
@@ -39,6 +41,9 @@ export default function Application({
           Phone Number: <span>{phoneNumber}</span>
         </p>
       </div>
+
+      <p className={letter}>Cover Letter:<span>{description}</span></p>
+
       <div className={cvClassName}>
         <strong>Uploaded CV:</strong>
         <a href={cvLink} download>

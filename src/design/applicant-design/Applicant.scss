@@ -107,4 +107,19 @@
             transition: 0.9s all ease;
         }
     }
+    .letter {
+        width: 100%;
+        text-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 15px;
+        span {
+            display:  block;
+        }
+       
+    }
 }
