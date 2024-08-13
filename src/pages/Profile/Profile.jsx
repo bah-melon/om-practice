@@ -30,8 +30,8 @@ export default function Profile(){
     const fetchApplications = async () =>{
         try {
             const res = await axiosClient.get('/applications');
-            setApplications(res.data);
-            console.log(res.data);
+            setApplications(res.data.data);
+            console.log(res.data.data, 'app');
         } catch (error) {
             console.error("Error fetching applications:", error);
         }
@@ -51,8 +51,8 @@ export default function Profile(){
         <div className="container">
             <Navbar />
             <div className="profile">
-                <ProfileUser user={user} />
-                <CreatePosition />
+                <ProfileUser user={user}/>
+                <CreatePosition user={user}/>
                 <Applications applications={applications} positions={positions}/>
                 <ShowPositions positions={positions}/>
             </div>

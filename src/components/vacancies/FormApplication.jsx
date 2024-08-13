@@ -25,7 +25,7 @@ export default function FormApplication() {
         if (type === 'file') {
             setFormData({
                 ...formData,
-                [name]: files[0]
+                [name]: files
             });
         } else {
             setFormData({
@@ -48,7 +48,10 @@ export default function FormApplication() {
             
             const dataToSubmit = { ...formData, id };
             const res = await axiosClient.post('/applications/create', dataToSubmit, {
-    
+                headers: {
+                    'enctype' :"multipart/form-data",
+                }
+                
             });
 
             console.log('Form submitted successfully:', res.data);
