@@ -22,7 +22,7 @@ export default function Navigation() {
                 <ul>
                     <li><Link to="">CASES</Link></li>
                     <li><Link to="">DIENSTEN</Link></li>
-                    <li><Link to="">AANPAK</Link></li>
+                    <li><Link to="/expertise">EXPERTISE</Link></li>
                     <li><Link to="/over-ons">OVER ONS</Link></li>
                     <li><Link to="/workat">WERKEN BIJ</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>

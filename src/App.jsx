@@ -11,6 +11,7 @@ import Signup from './pages/Sign/Signup';
 import Profile from './pages/Profile/Profile';
 import Applicant from './pages/Applicant/Applicant';
 import Vacancies from '../src/pages/Vacancies/Vacancies'
+import Expertise from './pages/Expertise/Expertise';
 
 function App() {
   const routes = [
@@ -23,7 +24,8 @@ function App() {
     { path: '/signup', element: <Signup/>},
     { path: '/profile', element: <Profile/>},
     { path: '/applicant' , element : <Applicant/>},
-    { path: '/vacancies/:id', element : <Vacancies/>}
+    { path: '/vacancies/:id', element : <Vacancies/>},
+    { path: '/expertise' , element: <Expertise/>},
   ];
 
   return (
