@@ -12,6 +12,7 @@ import SignIn from './pages/Sign/SignIn';
 import Signup from './pages/Sign/Signup';
 import Profile from './pages/Profile/Profile';
 import ApplicantsPerPosition from './pages/ApplicantsPerPosition/ApplicantsPerPosition';
+import Expertise from './pages/Expertise/Expertise';
 
 function App() {
   const routes = [
@@ -21,6 +22,7 @@ function App() {
     { path: '/over-ons', element: <OverOns /> },
     { path: '/aan-de-slag', element: <AanDeSlag /> },
     { path: '/vacancies/:id' , element : <Vacancies/>},
+    { path: '/expertise' , element : <Expertise/>},
     { path: '/applicant' , element : <Applicant/>},
     { path: '/signin', element: <SignIn/>},
     { path: '/signup', element: <Signup/>},
