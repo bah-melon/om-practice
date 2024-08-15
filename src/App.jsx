@@ -14,6 +14,7 @@ import Profile from './pages/Profile/Profile';
 import ApplicantsPerPosition from './pages/ApplicantsPerPosition/ApplicantsPerPosition';
 import Expertise from './pages/Expertise/Expertise';
 import Aanpak from './pages/Aanpak/Aanpak';
+import Cases from './pages/Cases/Cases';
 
 function App() {
   const routes = [
@@ -29,6 +30,7 @@ function App() {
     { path: '/signup', element: <Signup/>},
     { path: '/profile', element: <Profile/>},
     { path: '/aanpak' , element: <Aanpak/>},
+    { path: '/cases' , element : <Cases/>},
     { path: '/position/:id', element: <ApplicantsPerPosition />}
   ];
 

@@ -10,12 +10,14 @@ import Image1 from "../../assets/expertise/orangemelons-house.png";
 import Image2 from "../../assets/expertise/orangemelons-post.png";
 import Image3 from "../../assets/expertise/orangemelons-help.png";
 import InfiniteScroll from "../../components/expertise/InfiniteScroll";
+import '../../design/expertise-design/Expertise.scss'
 
 export default function Expertise() {
   return (
     <div>
+      <div className="container">
       <Navbar />
-      <HeadingExpertise
+      <HeadingExpertise className={"expertise-header"}
         heading={"Mooie plannen opgelijnd?!"}
         subheading={
           "Gebruik onze IT-vitamines voor de juiste boost voor jullie succes!"
@@ -50,12 +52,13 @@ export default function Expertise() {
         color={{ backgroundColor: "#a71d5d" }}
       />
 
-       <HeadingExpertise
+       <HeadingExpertise className={"expertise-header"}
         heading={"Onze Melonheads zijn gevuld met de laatste technologie"}
         paragraph={
           "Hoogopgeleide IT-talenten kan je niet alleen bij ons in Amsterdam vinden, maar juist ook in ons Techcenter in Noord-Macedonië, Kosovo en Albanië. We blijven met onze voeten op Europese grond, spreken elkaars taal en schakelen snel. Want naast techniek, zijn wij ook getraind in communicatie en projectmanagement."
         }
        />
+       </div>
 
        <InfiniteScroll />
 

@@ -125,13 +125,13 @@
 
   .Om-Logo {
     position: absolute;
-    left: 519.61px;
+    left: 0;
+    right: 0;
     top: 360px;
+    margin: 0 auto;
     z-index: 2;
     width: 130px;
     height: 100px;
-    transform: translateX(50%, -50%);
-    transform: translateY(50%, -50%);
     @include mobile {
       position: absolute;
       left: 100px;
@@ -139,13 +139,6 @@
       z-index: 2;
       width: 80px;
       height: 70px;
-      transform: translateX(50%, -50%);
-      transform: translateY(50%, -50%);
-    }
-
-    @include tablet{
-      transform: translateX(50%, -50%);
-      transform: translateY(50%, -50%);
     }
    
   }
