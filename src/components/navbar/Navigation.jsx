@@ -21,7 +21,7 @@ export default function Navigation() {
             <div className="navigation">
                 <ul>
                     <li><Link to="">CASES</Link></li>
-                    <li><Link to="">DIENSTEN</Link></li>
+                    <li><Link to="/aanpak">AANPAK</Link></li>
                     <li><Link to="/expertise">EXPERTISE</Link></li>
                     <li><Link to="/over-ons">OVER ONS</Link></li>
                     <li><Link to="/workat">WERKEN BIJ</Link></li>

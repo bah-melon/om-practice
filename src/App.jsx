@@ -13,6 +13,7 @@ import Signup from './pages/Sign/Signup';
 import Profile from './pages/Profile/Profile';
 import ApplicantsPerPosition from './pages/ApplicantsPerPosition/ApplicantsPerPosition';
 import Expertise from './pages/Expertise/Expertise';
+import Aanpak from './pages/Aanpak/Aanpak';
 
 function App() {
   const routes = [
@@ -27,6 +28,7 @@ function App() {
     { path: '/signin', element: <SignIn/>},
     { path: '/signup', element: <Signup/>},
     { path: '/profile', element: <Profile/>},
+    { path: '/aanpak' , element: <Aanpak/>},
     { path: '/position/:id', element: <ApplicantsPerPosition />}
   ];
 
