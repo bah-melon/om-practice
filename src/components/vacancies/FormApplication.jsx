@@ -41,11 +41,6 @@ export default function FormApplication() {
         e.preventDefault();
         
         try {
-            // const token = localStorage.getItem('token');
-            // if (!token) {
-            //     throw new Error("No token found, please log in again.");
-            // }
-            
             const dataToSubmit = { ...formData, id };
             const res = await axiosClient.post('/applications/create', dataToSubmit, {
     

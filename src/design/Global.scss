@@ -13,6 +13,31 @@
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    .alert{
+        display: flex;
+        position: fixed;
+        top: 50px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        height: 50px;
+        color: white;
+        border-radius: 40px;
+        box-shadow: -1px 14px 21px -4px rgba(0,0,0,0.25);
+        -webkit-box-shadow: -1px 14px 21px -4px rgba(0,0,0,0.25);
+        -moz-box-shadow: -1px 14px 21px -4px rgba(0,0,0,0.25);
+        z-index: 5;
+        .message{
+            width: 60%;
+            text-align: center;
+        }
+        .closebtn{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+    }
 }
 
 $darkGreen:#07301F;
@@ -38,3 +63,28 @@ $textFooter : 15px;
 
 $mobile : 800px;
 $tablet: 1024px;
+
+.pagination{
+    display: flex;
+    align-items: center;
+    div{
+        padding: 0 12px;
+    }
+    button{
+        border: none;
+        border-radius: 36px;
+        background-color: $orange;
+        color: $white;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: $Green;
+        transition-duration: 0.5s;
+    }
+    button:disabled{
+        background-color: #ff660056;
+        border: 1px solid $orange;
+        cursor: auto;
+    }
+}
