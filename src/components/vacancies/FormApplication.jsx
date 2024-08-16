@@ -15,7 +15,7 @@ export default function FormApplication() {
         email: '',
         city: '',
         country: '',
-        file_path: '../../',
+        file_path: '',
         description: '',
         open_positions : id
     });
@@ -42,8 +42,11 @@ export default function FormApplication() {
         
         try {
             const dataToSubmit = { ...formData, id };
+            console.log(dataToSubmit);
             const res = await axiosClient.post('/applications/create', dataToSubmit, {
-    
+                headers: {
+                    'Content-type' :"multipart/form-data",
+                }      
             });
 
             console.log('Form submitted successfully:', res.data);
@@ -78,7 +81,7 @@ export default function FormApplication() {
                 <input title="Stad" type="text" id="stad" className="stad" name="city" value={formData.city} onChange={handleChange}></input>
                 <label htmlFor="country">Land</label>
                 <input title="Land" type="text" id="land" className="land" name="country" value={formData.country} onChange={handleChange}></input>
-                <input type="file" id="cvFile" onChange={handleChange}></input>
+                <input type="file" id="cvFile" onChange={handleChange} name="file_path"></input>
                 <label htmlFor="message">Bericht</label>
                 <textarea className="wideInput" placeholder="type text here" id="message" value={formData.description} onChange={handleChange} name="description"></textarea>
                 <Button title="Verzenden" className="btn" />

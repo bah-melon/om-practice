@@ -69,6 +69,7 @@
   flex-direction: row;
   background-color: white;
   margin: 10px auto;
+  padding: 10px;
 }
 .card-container .card-wrapper .text {
   width: 50%;
@@ -80,8 +81,13 @@
   }
 }
 .card-container .card-wrapper .text h1 {
+  font-size: 1.4rem;
   width: 90%;
   margin: 0 auto;
+}
+.card-container .card-wrapper .text h2 {
+  font-size: 1.1rem;
+  margin: 10px auto;
 }
 .card-container .card-wrapper .text p {
   margin: 10px auto;
@@ -94,4 +100,83 @@
     flex-direction: column;
     width: 100%;
   }
+}
+
+.form-field-container {
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.form-field-container .heading {
+  padding: 40px 0;
+}
+.form-field-container form .info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 20px 0;
+}
+@media screen and (max-width: 1000px) {
+  .form-field-container form .info {
+    grid-template-columns: auto;
+  }
+}
+.form-field-container form .input-field {
+  display: block;
+  width: 100%;
+}
+.form-field-container form .input-field input {
+  width: 100%;
+  padding: 15px;
+  background-color: #FFF6F2;
+  border: 0;
+  outline: 0;
+  color: black;
+}
+.form-field-container form .input-field input:focus {
+  border: 2px solid #FF6600;
+}
+.form-field-container form .input-field p {
+  color: red;
+}
+.form-field-container form .company {
+  width: 100%;
+  padding: 20px 0;
+}
+.form-field-container form .company input {
+  display: block;
+  width: 100%;
+  background-color: #FFF6F2;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  color: black;
+}
+.form-field-container form .company input:focus {
+  border: 2px solid #FF6600;
+}
+.form-field-container form .company p {
+  color: red;
+}
+.form-field-container form #message {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFF6F2;
+  border: 0;
+  outline: 0;
+}
+.form-field-container form #message:focus {
+  border: 2px solid #FF6600;
+}
+.form-field-container form .btn {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF6600;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=Aandeslag.css.map */

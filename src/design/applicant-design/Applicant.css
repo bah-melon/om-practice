@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.application-container {
+  background-color: white;
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.application-container h1 {
+  color: #FF6600;
+  font-size: 2.5rem;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .application-container h1 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+.application-container .info {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+  margin: 30px auto;
+}
+@media screen and (max-width: 800px) {
+  .application-container .info {
+    grid-template-columns: auto;
+  }
+}
+.application-container .info p {
+  color: #153F2D;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding: 15px;
+  border: 3px solid #FF6600;
+  border-radius: 20px;
+  width: 90%;
+  cursor: pointer;
+  transition: 0.9s all ease;
+}
+@media screen and (max-width: 800px) {
+  .application-container .info p {
+    font-size: 0.9rem;
+  }
+}
+.application-container .info p span {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 800px) {
+  .application-container .info p span {
+    font-size: 0.9rem;
+  }
+}
+.application-container .info p:hover {
+  background-color: #FF6600;
+  color: white;
+  transition: 0.9s all ease;
+  border: white;
+}
+.application-container .cv {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  .application-container .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.application-container .cv strong {
+  font-size: 1.3rem;
+  color: #153F2D;
+}
+@media screen and (max-width: 800px) {
+  .application-container .cv strong {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+.application-container .cv a {
+  text-decoration: none;
+  background-color: white;
+  color: #153F2D;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.9s all ease;
+}
+@media screen and (max-width: 800px) {
+  .application-container .cv a {
+    font-size: 0.9rem;
+    width: 60%;
+    text-align: center;
+    background-color: #FF6600;
+    color: white;
+  }
+}
+.application-container .cv a:hover {
+  background-color: #FF6600;
+  color: white;
+  transition: 0.9s all ease;
+}
+.application-container .letter {
+  width: 100%;
+  text-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px;
+}
+.application-container .letter span {
+  display: block;
+}/*# sourceMappingURL=Applicant.css.map */

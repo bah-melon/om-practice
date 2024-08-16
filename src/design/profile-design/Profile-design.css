@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile h1 {
+  font-weight: 500;
+  margin-bottom: 1%;
+}
+.profile .btn {
+  color: white;
+  background-color: #FF6600;
+  border: 0px;
+  border-radius: 40px;
+  padding: 8px 30px;
+  cursor: pointer;
+}
+.profile .profile-card {
+  width: 50%;
+  padding: 1%;
+}
+.profile .profile-card .user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.profile .profile-card .user label {
+  padding: 3% 0px;
+  font-size: 16px;
+}
+.profile .applications-card {
+  width: 100%;
+  padding: 1%;
+}
+.profile .applications-card .applications {
+  width: 100%;
+  padding: 3%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.profile .applications-card .applications ul {
+  list-style-type: none;
+  padding: 0;
+}
+.profile .applications-card .applications li {
+  border: 1px solid #FF6600;
+  border-radius: 40px;
+  margin: 1%;
+  padding: 10px 15px;
+}
+.profile .applications-card .applications li:hover {
+  background-color: #FF6600;
+  color: white;
+  transition: 200ms;
+}
+.profile .show-position {
+  width: 100%;
+  padding: 1%;
+}
+.profile .show-position .position {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  padding: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.profile .show-position .position a {
+  text-decoration: none;
+  color: black;
+}
+.profile .show-position .position a:hover {
+  color: white;
+}
+.profile .show-position .position ul {
+  list-style-type: none;
+  border: 1px solid #FF6600;
+  border-radius: 30px;
+  margin: 1%;
+  padding: 15px 15px;
+}
+.profile .show-position .position ul:hover {
+  background-color: #FF6600;
+  color: white;
+  transition: 200ms;
+}
+.profile .create-position-card {
+  width: 50%;
+  padding: 1%;
+}
+.profile .create-position-card .create-position {
+  padding: 3%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.profile .create-position-card .create-position form {
+  display: flex;
+  flex-direction: column;
+}
+.profile .create-position-card .create-position form label {
+  font-weight: bold;
+}
+.profile .create-position-card .create-position form input {
+  margin: 2% 0px;
+  padding: 1%;
+  border: 1px solid #FF6600;
+  border-radius: 40px;
+}
+.profile .create-position-card .create-position form .btn {
+  color: white;
+  background-color: #FF6600;
+  border: 0px;
+  border-radius: 40px;
+  padding: 8px 30px;
+}
+.profile .create-position-card .create-position form select {
+  margin: 2% 0px;
+  padding: 1%;
+  border: 1px solid #FF6600;
+  border-radius: 40px;
+}
+
+@media (max-width: 820px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile h1 {
+    margin-top: 3%;
+  }
+  .profile .profile-card {
+    width: 100%;
+  }
+  .profile .create-position-card {
+    width: 100%;
+  }
+  .profile .applications-card .applications li {
+    margin-bottom: 3%;
+    min-height: 50px;
+  }
+  .profile .show-position .position ul {
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 430px) {
+  .profile h1 {
+    margin-top: 3%;
+    font-size: 20px;
+  }
+  .profile .profile-card {
+    width: 100%;
+  }
+  .profile .profile-card .user label {
+    font-size: 16px;
+  }
+  .profile .create-position-card {
+    width: 100%;
+  }
+  .profile .applications-card .applications li {
+    margin-bottom: 3%;
+    min-height: 50px;
+    font-size: 14px;
+    border-radius: 28px;
+    min-height: 70px;
+  }
+  .profile .show-position .position ul {
+    margin-bottom: 3%;
+  }
+}/*# sourceMappingURL=Profile-design.css.map */

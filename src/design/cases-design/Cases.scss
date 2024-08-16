@@ -1,0 +1,195 @@
+@import "../Global.scss";
+
+.banner-container {
+  width: 90%;
+  height: 100dvh;
+  margin: 0 auto;
+  background-image: url("https://orangemelons.com/hubfs/DSC_7385.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  color: $white;
+  display: flex;
+  flex-direction: column-reverse;
+  .banner-text {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  h1 {
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 95px;
+    text-align: center;
+    float: inline-end;
+    padding: 20px;
+  }
+  p {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+.banner-heading {
+  width: 80%;
+  margin: 50px auto;
+  :nth-child(1) {
+    text-align: center;
+    color: #ff6600;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  :nth-child(2) {
+    text-align: center;
+    color: #153f2d;
+    font-size: 55px;
+    font-weight: 400;
+  }
+  :nth-child(4) {
+    font-size: 17px;
+    line-height: 34px;
+    width: 80%;
+    text-align: center;
+  }
+  :nth-child(n) {
+    margin: 15px auto;
+  }
+}
+
+
+.banner-card-container {
+  width: 60%;
+  margin: 0 auto;
+  .banner-cards {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    .card {
+      height: 500px;
+      background-color: $white;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 80px 0;
+      .image {
+        background-image: url("https://orangemelons.com/hubfs/Bitmap%205b-4.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 25px 25px 0 0;
+        height: 300px;
+      }
+      .image2 {
+        background-image: url("	https://orangemelons.com/hubfs/Bitmap%207b-2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 25px 25px 0 0;
+        height: 300px;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 20px;
+      }
+      .p {
+          color: $orange;
+          font-size: 1.1rem;
+      }
+    }
+  
+    .card2 {
+      height: 500px;
+      background-color: $white;
+      border-radius: 25px;
+      width: 100%;
+      background-image: url("https://orangemelons.com/hubfs/Bitmap%204b-1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column-reverse;
+      color: $white;
+      margin: 130px 0;
+      p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 20px;
+      }
+      .p {
+          color: $orange;
+          font-size: 1.1rem;
+      }
+    }
+  
+    .card1 {
+      height: 500px;
+      background-color: $white;
+      border-radius: 25px;
+      width: 100%;
+      background-image: url("	https://orangemelons.com/hubfs/MicrosoftTeams-image%20%282%29-2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column-reverse;
+      color: $black;
+      margin: 0;
+      p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 20px;
+      }
+    }
+  }
+
+  .subheading {
+    text-align: center;
+    h1{
+        font-weight: 500;
+    }
+}
+}
+
+
+
+
+
+@media screen and (max-width : 1024px) {
+     .banner-text {
+        h1 {
+            font-size: 38px;
+            font-weight: 400;
+            line-height: 52px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 20px;
+        }
+     }
+
+     .banner-heading {
+        width: 100%;
+        :nth-child(4) {
+            width: 100%;
+        }
+     }
+     
+     .banner-card-container {
+        .banner-cards {
+            grid-template-columns: auto;
+         }
+     }
+
+     .subheading {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 21px 0;
+     }
+}

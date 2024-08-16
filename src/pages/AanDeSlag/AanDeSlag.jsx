@@ -19,7 +19,7 @@ export default function AanDeSlag() {
       <Card heading="Ons IT-team,onze regie" subheading="Ons IT-team, onze regie" paragraph="Heb je tijdelijk of voor een langere periode extra IT-capaciteit nodig maar je hebt daar de tijd niet voor? Wij kunnen jou ontzorgen door een team voor je samen te stellen en de aansturing hiervan op ons te nemen."/>
       <Formfield/>
       <Prefooter
-        heading="Laten we onze (meloen)koppen bij elkaar steken."
+        heading="Laten we onze (meloen) koppen bij elkaar steken."
         subheading="We spreken graag verder om alle opties door te lopen. Om te zien hoe en waarmee we jullie kunnen ondersteunen. Met een compleet software team, een tijdelijke of langdurige opschaling van jullie IT-capaciteit dan wel een strategische samenwerking."
         title="Melonhead Bas spreekt je graag!"
         image={Profile}

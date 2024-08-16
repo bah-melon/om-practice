@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.applicants-per-position {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.applicants-per-position .position {
+  text-align: center;
+  width: 70%;
+  margin-bottom: 3%;
+}
+.applicants-per-position .position h1 {
+  font-weight: 400;
+  margin-bottom: 2%;
+  font-size: 44px;
+}
+.applicants-per-position .position small {
+  color: #FF6600;
+  font-size: 20px;
+}
+.applicants-per-position .position p {
+  margin-bottom: 3%;
+}
+.applicants-per-position .applications-card {
+  width: 100%;
+  padding: 1%;
+}
+.applicants-per-position .applications-card h1 {
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.applicants-per-position .applications-card .applications {
+  width: 100%;
+  padding: 3%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.applicants-per-position .applications-card .applications ul {
+  list-style-type: none;
+  padding: 0;
+}
+.applicants-per-position .applications-card .applications li {
+  border: 1px solid #FF6600;
+  border-radius: 40px;
+  margin: 1%;
+  padding: 10px 15px;
+}
+.applicants-per-position .applications-card .applications li:hover {
+  background-color: #FF6600;
+  color: white;
+  transition: 200ms;
+}/*# sourceMappingURL=ApplicantsPerPosition-design.css.map */
