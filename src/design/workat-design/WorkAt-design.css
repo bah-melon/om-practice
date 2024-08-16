@@ -133,6 +133,16 @@
 .workat-content .open-positions .open-position small {
   color: #FF6600;
 }
+.workat-content .loader {
+  width: 50px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 rgba(0, 0, 0, 0);
+  animation: l1 1s infinite;
+  visibility: hidden;
+}
 
 @media (max-width: 1024px) {
   .workat-content .image-widget {

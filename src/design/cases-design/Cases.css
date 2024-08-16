@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.banner-container {
+  width: 90%;
+  height: 100dvh;
+  margin: 0 auto;
+  background-image: url("https://orangemelons.com/hubfs/DSC_7385.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.banner-container .banner-text {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.banner-container h1 {
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 95px;
+  text-align: center;
+  float: inline-end;
+  padding: 20px;
+}
+.banner-container p {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.banner-heading {
+  width: 80%;
+  margin: 50px auto;
+}
+.banner-heading :nth-child(1) {
+  text-align: center;
+  color: #ff6600;
+  font-size: 15px;
+  font-weight: 500;
+}
+.banner-heading :nth-child(2) {
+  text-align: center;
+  color: #153f2d;
+  font-size: 55px;
+  font-weight: 400;
+}
+.banner-heading :nth-child(4) {
+  font-size: 17px;
+  line-height: 34px;
+  width: 80%;
+  text-align: center;
+}
+.banner-heading :nth-child(n) {
+  margin: 15px auto;
+}
+
+.banner-card-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.banner-card-container .banner-cards {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.banner-card-container .banner-cards .card {
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 80px 0;
+}
+.banner-card-container .banner-cards .card .image {
+  background-image: url("https://orangemelons.com/hubfs/Bitmap%205b-4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px 25px 0 0;
+  height: 300px;
+}
+.banner-card-container .banner-cards .card .image2 {
+  background-image: url("	https://orangemelons.com/hubfs/Bitmap%207b-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px 25px 0 0;
+  height: 300px;
+}
+.banner-card-container .banner-cards .card p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 20px;
+}
+.banner-card-container .banner-cards .card .p {
+  color: #FF6600;
+  font-size: 1.1rem;
+}
+.banner-card-container .banner-cards .card2 {
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  width: 100%;
+  background-image: url("https://orangemelons.com/hubfs/Bitmap%204b-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  margin: 130px 0;
+}
+.banner-card-container .banner-cards .card2 p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 20px;
+}
+.banner-card-container .banner-cards .card2 .p {
+  color: #FF6600;
+  font-size: 1.1rem;
+}
+.banner-card-container .banner-cards .card1 {
+  height: 500px;
+  background-color: white;
+  border-radius: 25px;
+  width: 100%;
+  background-image: url("	https://orangemelons.com/hubfs/MicrosoftTeams-image%20%282%29-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column-reverse;
+  color: black;
+  margin: 0;
+}
+.banner-card-container .banner-cards .card1 p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 20px;
+}
+.banner-card-container .subheading {
+  text-align: center;
+}
+.banner-card-container .subheading h1 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-text h1 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 52px;
+  }
+  .banner-text p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .banner-heading {
+    width: 100%;
+  }
+  .banner-heading :nth-child(4) {
+    width: 100%;
+  }
+  .banner-card-container .banner-cards {
+    grid-template-columns: auto;
+  }
+  .subheading {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 21px 0;
+  }
+}/*# sourceMappingURL=Cases.css.map */

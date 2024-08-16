@@ -98,6 +98,22 @@
   transition: 0.9s all ease;
 }
 
+.aanpak-technologies {
+  width: 50%;
+   :nth-child(2) {
+     text-align: center;
+     color: #153F2D;
+     font-size: 48px;
+   }
+   :nth-child(4){
+     font-size: 18px;
+     line-height: 34px;
+   }
+   :nth-child(n) {
+    margin: 20px 0;
+   }
+}
+
 @media screen and (max-width: 1024px) {
   .anpaak-heading {
     flex-direction: column;
@@ -169,5 +185,11 @@
 
   .expertise-header {
     width: 90%;
+  }
+  .aanpak-technologies {
+    width: 90%;
+    :nth-child(2) {
+      font-size: 35px;
+    }
   }
 }

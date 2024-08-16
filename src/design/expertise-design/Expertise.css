@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.expertise-header {
+  width: 60%;
+  margin: 15px auto;
+}
+.expertise-header :nth-child(1) {
+  text-align: center;
+  color: #ff6600;
+  font-size: 15px;
+  font-weight: 700;
+}
+.expertise-header :nth-child(2) {
+  text-align: center;
+  color: #153f2d;
+  font-size: 55px;
+  font-weight: 500;
+}
+.expertise-header :nth-child(3) {
+  text-align: center;
+  color: #ff6600;
+  font-size: 48px;
+  font-weight: 500;
+}
+.expertise-header :nth-child(4) {
+  font-size: 17px;
+  line-height: 34px;
+  width: 50%;
+}
+.expertise-header :nth-child(n) {
+  margin: 15px auto;
+}
+
+.cards-expertise {
+  width: 70%;
+  margin: 40px auto;
+}
+.cards-expertise .card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.cards-expertise .card .image {
+  width: 50%;
+}
+.cards-expertise .card .image img {
+  width: 400px;
+  height: 320px;
+  display: block;
+  border-radius: 10px 0px 0 10px;
+}
+.cards-expertise .card .text {
+  width: 70%;
+  padding: 0 20px;
+  margin: 30px auto;
+  color: white;
+}
+.cards-expertise .card .text :nth-child(1) {
+  font-size: 1.5rem;
+  margin: 15px auto;
+}
+.cards-expertise .card .text :nth-child(2) {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.cards-expertise .card .text img {
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 20px;
+  float: right;
+}
+
+.Infinite-Scroll {
+  margin: 50px auto;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.Infinite-Scroll .logos {
+  overflow: hidden;
+  padding: 30px 0;
+  white-space: nowrap;
+  background-color: #FF6600;
+}
+.Infinite-Scroll .logos .logos-slide {
+  display: inline-block;
+  animation: slide 20s infinite linear;
+}
+.Infinite-Scroll .logos .logos-slide img {
+  height: 55px;
+  margin: 0 40px;
+}
+.Infinite-Scroll .logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+.Infinite-Scroll h1 {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #07301F;
+  margin: 30px 0;
+}
+.Infinite-Scroll .text-scroll {
+  overflow: hidden;
+  padding: 30px 0;
+  white-space: nowrap;
+  background-color: #FF6600;
+  margin: 10px 0;
+}
+.Infinite-Scroll .text-scroll .text-slide {
+  display: inline-block;
+  animation: slide-right 60s infinite linear;
+}
+.Infinite-Scroll .text-scroll .text-slide h2 {
+  font-size: 3.1rem;
+  color: white;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  .expertise-header :nth-child(2) {
+    font-size: 40px;
+  }
+  .expertise-header :nth-child(3) {
+    font-size: 38px;
+  }
+  .expertise-header :nth-child(4) {
+    width: 80%;
+  }
+  .cards-expertise .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards-expertise .card .image {
+    width: 100%;
+  }
+  .cards-expertise .card .image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .cards-expertise .card .text :nth-child(1) {
+    font-size: 1.1rem;
+    margin: 15px auto;
+  }
+  .cards-expertise .card .text :nth-child(2) {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 700px) {
+  .expertise-header :nth-child(2) {
+    font-size: 30px;
+  }
+  .expertise-header :nth-child(3) {
+    font-size: 28px;
+  }
+  .expertise-header :nth-child(4) {
+    width: 80%;
+  }
+  .Infinite-Scroll h1 {
+    font-size: 1.8rem;
+  }
+  .Infinite-Scroll .logos .logos-slide img {
+    height: 35px;
+    margin: 0 40px;
+  }
+  .Infinite-Scroll .text-scroll .text-slide h2 {
+    font-size: 2.1rem;
+  }
+}/*# sourceMappingURL=Expertise.css.map */
