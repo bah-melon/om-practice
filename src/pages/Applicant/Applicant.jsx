@@ -12,11 +12,11 @@ export default function Applicant() {
 
   useEffect(() => {
     fetchApplicant();
-  }, [id]);
+  }, []);
 
   const fetchApplicant = async () => {
     try {
-      const res = await axiosClient.get(`/applications/show/3`);
+      const res = await axiosClient.get(`/applications/show/${id}`);
       const data = res.data;
 
       if (data && data.application) {
@@ -32,24 +32,37 @@ export default function Applicant() {
     }
   };
 
-  return (
-    <div>
-      <Navbar />
+  const fetchCV = async () => {
+    try {
+      const res = await axiosClient.get(`/applications/${id}/download`,{
+        responseType: 'blob', 
+      });
 
+      const url = window.URL.createObjectURL(new Blob([res.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `${applicants.firstName}_${applicants.lastName}_CV.pdf`);
+      document.body.appendChild(link);
+      link.click();
+
+      link.parentNode.removeChild(link);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  return (
+    <div className="container">
+      <Navbar />
       <Application
-        name={applicants.firstName}
-        surname={applicants.lastName}
-        country={applicants.country}
-        email={applicants.email}
-        phoneNumber={applicants.phoneNumber}
-        description={applicants.description}
-        city={applicants.city}
-        cvLink={applicants.file_path}
+        applicants={applicants}
+        fetchCV={fetchCV}
         containerClassName={"application-container"}
         titleClassName={"description"}
         infoClassName={"info"}
         cvClassName={"cv"}
         letter={"letter"}
+        btnDownload={'btn-download'}
       />
     </div>
   );

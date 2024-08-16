@@ -41,7 +41,6 @@ export default function FormApplication() {
         e.preventDefault();
         
         try {
-
             const dataToSubmit = { ...formData, id };
             console.log(dataToSubmit);
             const res = await axiosClient.post('/applications/create', dataToSubmit, {
