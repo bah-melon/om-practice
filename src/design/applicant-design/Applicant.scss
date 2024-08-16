@@ -12,6 +12,9 @@
     height: auto;
     margin: 20px auto;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     h1{
@@ -54,7 +57,7 @@
                     font-size: 0.9rem;
                 }
             }
-            transition: 0.9s all ease;
+            // transition: 0.9s all ease;
         }
         p:hover {
             background-color: $orange;
@@ -83,12 +86,12 @@
                 text-align: center;
             }
         }
-        a {
-            text-decoration: none;
+        .btn-download {
             background-color: $white;
             color: $Green;
             font-size: 1.2rem;
             font-weight: 600;
+            border: none;
             border-radius: 30px;
             padding: 10px;
             cursor: pointer;
@@ -101,7 +104,7 @@
                 color: $white;
             }
         }
-        a:hover {
+        .btn-download:hover {
             background-color: $orange;
             color: white;
             transition: 0.9s all ease;
@@ -121,5 +124,19 @@
             display:  block;
         }
        
+    }
+    .btn-delete{
+        padding: 10px 50px;
+        color: $white;
+        font-weight: 500;
+        background-color: rgb(255, 0, 0);
+        border: none;
+        border-radius: 16px;
+        margin-top: 5%;
+    }
+    .btn-delete:hover{
+        background-color: rgb(66, 42, 42);
+        color: $white;
+        transition: 400ms;
     }
 }

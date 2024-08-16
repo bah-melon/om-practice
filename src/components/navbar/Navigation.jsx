@@ -35,6 +35,9 @@ export default function Navigation() {
                                 {isDropdownOpen && (
                                     <ul className="dropdown-menu">
                                         <li><Link to="/profile">PROFILE</Link></li>
+                                        <li><Link to="/create-position">CREATE POSITION</Link></li>
+                                        <li><Link to="/applications">APPLICATIONS</Link></li>
+                                        <li><Link to="/open-positions">OPEN POSITIONS</Link></li>
                                         <li><Link onClick={handleSignOut}>SIGN OUT</Link></li>
                                     </ul>
                                 )}
@@ -60,6 +63,9 @@ export default function Navigation() {
                         {isLoggedIn ? (
                             <>
                                 <li><Link to="/profile">PROFILE</Link></li>
+                                <li><Link to="/create-position">CREATE POSITION</Link></li>
+                                <li><Link to="/applications">APPLICATIONS</Link></li>
+                                <li><Link to="/open-positions">OPEN POSITIONS</Link></li>
                                 <li><Link onClick={handleSignOut}>SIGN OUT</Link></li>
                             </>
                         ) : (

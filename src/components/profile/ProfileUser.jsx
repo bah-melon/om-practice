@@ -1,4 +1,5 @@
 export default function ProfileUser({user}){
+    console.log('user', user)
     return(
         <div className="profile-card">
             <h1>User</h1>
