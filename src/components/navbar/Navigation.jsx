@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DropdownImg from '../../assets/Dropdown.png';
 
 export default function Navigation() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('token'));
+
+    const navigate = useNavigate();
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
@@ -13,7 +15,7 @@ export default function Navigation() {
     const handleSignOut = () => {
         localStorage.removeItem('token');
         setIsLoggedIn('');
-        window.location.reload();
+        window.location.href('/cases');
     };
 
     return (
@@ -38,7 +40,7 @@ export default function Navigation() {
                                         <li><Link to="/create-position">CREATE POSITION</Link></li>
                                         <li><Link to="/applications">APPLICATIONS</Link></li>
                                         <li><Link to="/open-positions">OPEN POSITIONS</Link></li>
-                                        <li><Link onClick={handleSignOut}>SIGN OUT</Link></li>
+                                        <li><Link onClick={handleSignOut} to='/cases'>SIGN OUT</Link></li>
                                     </ul>
                                 )}
                             </div>
@@ -52,9 +54,9 @@ export default function Navigation() {
                 <img src={DropdownImg} className="dropdown-btn" onClick={toggleDropdown} alt="Menu" width='60px' height='60px' />
                 <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
                     <ul>
-                        <li><Link to="">CASES</Link></li>
-                        <li><Link to="">DIENSTEN</Link></li>
-                        <li><Link to="">AANPAK</Link></li>
+                        <li><Link to="/cases">CASES</Link></li>
+                        <li><Link to="/aanpak">DIENSTEN</Link></li>
+                        <li><Link to="/expertise">AANPAK</Link></li>
                         <li><Link to="/over-ons">OVER ONS</Link></li>
                         <li><Link to="/workat">WERKEN BIJ</Link></li>
                         <li><Link to="/contact">CONTACT</Link></li>
@@ -66,7 +68,7 @@ export default function Navigation() {
                                 <li><Link to="/create-position">CREATE POSITION</Link></li>
                                 <li><Link to="/applications">APPLICATIONS</Link></li>
                                 <li><Link to="/open-positions">OPEN POSITIONS</Link></li>
-                                <li><Link onClick={handleSignOut}>SIGN OUT</Link></li>
+                                <li><Link onClick={handleSignOut} to='/cases'>SIGN OUT</Link></li>
                             </>
                         ) : (
                             <li><Link to="/signin">SIGN IN</Link></li>

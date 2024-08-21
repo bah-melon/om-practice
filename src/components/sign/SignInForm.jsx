@@ -23,7 +23,7 @@ export default function SignInForm(){
             const token = res.data.token;
             localStorage.setItem('token', token);
             setIndicator('loggedIn');
-            navigate('/whitepaper');
+            navigate('/cases');
         } catch (error) {
             setIndicator('notLoggedIn')
             console.error('Error:', error);

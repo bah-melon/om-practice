@@ -1,6 +1,6 @@
 import './design/Global.scss'
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import WorkAt from '../src/pages/WorkAt/WorkAt';
 import Whitepaper from '../src/pages/Whitepapers/Whitepaper';
 import Contact from '../src/pages/Contact/Contact';
@@ -15,7 +15,6 @@ import ApplicantsPerPosition from './pages/ApplicantsPerPosition/ApplicantsPerPo
 import Expertise from './pages/Expertise/Expertise';
 import Aanpak from './pages/Aanpak/Aanpak';
 import Cases from './pages/Cases/Cases';
-import Applicant from './pages/Applicant/Applicant';
 import CreatePosition from './pages/CreatePositon/CreatePosition';
 import Applications from './pages/Applications/Applications';
 import ShowPositions from './pages/ShowOpenPositions/ShowPositions';
@@ -39,11 +38,12 @@ function App() {
     { path: '/applications', element: <Applications/>},
     { path: '/open-positions', element: <ShowPositions/>},
     { path: '/position/:id', element: <ApplicantsPerPosition />},
-    { path: '/applicant/:id', element: <Applicant/>},
+    { path: '/applicant/:id', element: <Applicant/>}
   ];
 
   return (
     <Routes>
+      <Route path='/' element={<Navigate to='/cases' replace />}/>
       {routes.map((route, index) => (
         <Route key={index} path={route.path} element={route.element} />
       ))}
